@@ -36,12 +36,13 @@ html{
                 font-weight: bold;
                 &:hover a{
                   color: #FD5C63;
+                  transform: scale(1.2);
                 }
                 a {
                   text-decoration: none;
                   color: #3D4E61;
                   display: block;
-                  transition: color 1s;
+                  transition: color 1s, transform 1s;
                   img {
                     width: 100%;
                     display: block;
