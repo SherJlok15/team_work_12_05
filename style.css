@@ -33,10 +33,13 @@ html {
               line-height: 60px;
               text-align: center;
               font-weight: bold; }
+              html body .wrapper .content .header .menu .header_menu li:hover a {
+                color: #FD5C63; }
               html body .wrapper .content .header .menu .header_menu li a {
                 text-decoration: none;
                 color: #3D4E61;
-                display: block; }
+                display: block;
+                transition: color 1s; }
                 html body .wrapper .content .header .menu .header_menu li a img {
                   width: 100%;
                   display: block; }
@@ -79,6 +82,12 @@ html {
             html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_contact {
               font-weight: bold;
               margin-bottom: 10px; }
+              html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_contact a {
+                text-decoration: none;
+                color: #3D4E61;
+                transition: color 1s; }
+              html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_contact a:hover {
+                color: #FD5C63; }
             html body .wrapper .content .main .container .bg .order_form {
               justify-self: end;
               border: 1px solid #E1E7ED;
@@ -102,7 +111,13 @@ html {
                   color: #FFFFFF;
                   font-size: 16px;
                   line-height: 19px;
-                  width: 270px; }
+                  width: 270px;
+                  transition: background 1s, color 1s, border 1s; }
+                  html body .wrapper .content .main .container .bg .order_form .form_container form .form_button:hover {
+                    background: #FFFFFF;
+                    color: #FD5C63;
+                    border: 1px solid #FD5C63;
+                    cursor: pointer; }
                 html body .wrapper .content .main .container .bg .order_form .form_container form .date {
                   padding-left: 15px; }
                 html body .wrapper .content .main .container .bg .order_form .form_container form .date::placeholder {
@@ -121,6 +136,14 @@ html {
               grid-template: 1fr 1fr/repeat(2, 176px);
               grid-gap: 24px 20px;
               margin-bottom: 24px; }
+            html body .wrapper .content .main .container .bg .amenities .show {
+              font-weight: bold; }
+              html body .wrapper .content .main .container .bg .amenities .show a {
+                text-decoration: none;
+                color: #3D4E61;
+                transition: color 1s; }
+                html body .wrapper .content .main .container .bg .amenities .show a:hover {
+                  color: #FD5C63; }
       html body .wrapper .footer {
         flex: 0 0 auto; }
 
