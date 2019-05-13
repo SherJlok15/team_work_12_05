@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+  html body {
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    color: #3D4E61;
+    height: 100%; }
+    html body .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%; }
+      html body .wrapper .content {
+        flex: 1 0 auto; }
+        html body .wrapper .content .header .menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 60px;
+          margin-left: 26px;
+          margin-right: 19px; }
+          html body .wrapper .content .header .menu .header_menu {
+            display: flex;
+            list-style: none;
+            align-items: center; }
+            html body .wrapper .content .header .menu .header_menu li {
+              margin-right: 41px;
+              display: inline-block;
+              font-size: 16px;
+              line-height: 60px;
+              text-align: center;
+              font-weight: bold; }
+              html body .wrapper .content .header .menu .header_menu li:hover a {
+                color: #FD5C63;
+                transform: scale(1.2); }
+              html body .wrapper .content .header .menu .header_menu li a {
+                text-decoration: none;
+                color: #3D4E61;
+                display: block;
+                transition: color 1s, transform 1s; }
+                html body .wrapper .content .header .menu .header_menu li a img {
+                  width: 100%;
+                  display: block; }
+              html body .wrapper .content .header .menu .header_menu li .img_header_menu {
+                display: block;
+                width: 30px;
+                height: 30px; }
+            html body .wrapper .content .header .menu .header_menu li:last-child {
+              margin-right: 0; }
+        html body .wrapper .content .header .header_img {
+          background: url("img/header_img.png") no-repeat center;
+          background-size: cover;
+          height: 464px; }
+        html body .wrapper .content .main .container {
+          width: 900px;
+          margin: 0 auto; }
+          html body .wrapper .content .main .container .bg {
+            display: grid;
+            grid-template: repeat(2, 1fr)/493px 1fr;
+            grid-column-gap: 78px;
+            grid-row-gap: 44px;
+            margin-top: 39px; }
+            html body .wrapper .content .main .container .bg span {
+              display: block; }
+            html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_headline {
+              font-size: 36px;
+              line-height: 40px;
+              color: #3D4E61;
+              margin-bottom: 2px; }
+            html body .wrapper .content .main .container .bg .quiet_apartment .entire_apartment {
+              font-size: 16px;
+              line-height: 19px;
+              color: #687C94;
+              margin-bottom: 5px; }
+            html body .wrapper .content .main .container .bg .quiet_apartment .entire_apartment_description {
+              margin-bottom: 20px; }
+            html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_text {
+              margin-bottom: 16px;
+              line-height: 24px; }
+            html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_contact {
+              font-weight: bold;
+              margin-bottom: 10px; }
+              html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_contact a {
+                text-decoration: none;
+                color: #3D4E61;
+                transition: color 1s; }
+              html body .wrapper .content .main .container .bg .quiet_apartment .quiet_apartment_contact a:hover {
+                color: #FD5C63; }
+            html body .wrapper .content .main .container .bg .order_form {
+              justify-self: end;
+              border: 1px solid #E1E7ED;
+              border-radius: 3px; }
+              html body .wrapper .content .main .container .bg .order_form .form_container {
+                margin: 30px; }
+                html body .wrapper .content .main .container .bg .order_form .form_container .price {
+                  margin-bottom: 39px;
+                  line-height: 19px; }
+                html body .wrapper .content .main .container .bg .order_form .form_container form input {
+                  display: block;
+                  width: 250px;
+                  height: 50px;
+                  border: 1px solid #E1E7ED;
+                  border-radius: 3px;
+                  margin-bottom: 16px;
+                  line-height: 19px; }
+                html body .wrapper .content .main .container .bg .order_form .form_container form .form_button {
+                  margin-top: 24px;
+                  background: #FD5C63;
+                  color: #FFFFFF;
+                  font-size: 16px;
+                  line-height: 19px;
+                  width: 270px;
+                  transition: background 1s, color 1s, border 1s; }
+                  html body .wrapper .content .main .container .bg .order_form .form_container form .form_button:hover {
+                    background: #FFFFFF;
+                    color: #FD5C63;
+                    border: 1px solid #FD5C63;
+                    cursor: pointer; }
+                html body .wrapper .content .main .container .bg .order_form .form_container form .date {
+                  padding-left: 15px; }
+                html body .wrapper .content .main .container .bg .order_form .form_container form .date::placeholder {
+                  font-size: 16px; }
+                html body .wrapper .content .main .container .bg .order_form .form_container form .guests {
+                  padding-left: 15px; }
+                html body .wrapper .content .main .container .bg .order_form .form_container form .guests::placeholder {
+                  font-size: 16px; }
+            html body .wrapper .content .main .container .bg .amenities .amenities_headline {
+              font-size: 20px;
+              line-height: 23px;
+              font-weight: bold;
+              margin-bottom: 25px; }
+            html body .wrapper .content .main .container .bg .amenities .service_list {
+              display: grid;
+              grid-template: 1fr 1fr/repeat(2, 176px);
+              grid-gap: 24px 20px;
+              margin-bottom: 24px; }
+            html body .wrapper .content .main .container .bg .amenities .show {
+              font-weight: bold; }
+              html body .wrapper .content .main .container .bg .amenities .show a {
+                text-decoration: none;
+                color: #3D4E61;
+                transition: color 1s; }
+                html body .wrapper .content .main .container .bg .amenities .show a:hover {
+                  color: #FD5C63; }
+      html body .wrapper footer {
+        padding: 45px 25px;
+        box-shadow: 0 -1px 0 #e1e7ed; }
+        html body .wrapper footer .footer_container {
+          max-width: 900px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px; }
+          html body .wrapper footer .footer_container .footer_column {
+            display: flex;
+            flex-direction: column; }
+            html body .wrapper footer .footer_container .footer_column .links-themes {
+              font-weight: bold;
+              margin-bottom: 20px; }
+            html body .wrapper footer .footer_container .footer_column a:not(:last-child) {
+              margin-bottom: 10px; }
+
+/*# sourceMappingURL=main.css.map */

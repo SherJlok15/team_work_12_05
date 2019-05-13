@@ -4,6 +4,12 @@
 }
 html{
   height: 100%;
+
+  a {
+    text-decoration: none;
+    color: #3D4E61;
+  }
+
   body {
     font-family: Avenir, sans-serif;
     font-size: 16px;
@@ -188,14 +194,94 @@ html{
                 }
               }
             }
-            .ba {
-              //code
+            .reviews_block {
+              margin: 0;
+
+              .review {
+                margin-top: 34px;
+
+                .review_user {
+                  margin-bottom: 14px;
+
+                  .review_avatar {
+                    background: #c4c4c4;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    float: left;
+
+                    .avatar_link {
+                    }
+                  }
+
+                  .review_name {
+                    font-size: 20px;
+                    margin-bottom: 4px;
+                  }
+
+                  .review_date {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+            .host {
+              margin-top: 30px;
+
+              .host_place {
+                font-size: 14px;
+                margin: 10px 0 15px;
+              }
+
+              .host_info {
+                padding-bottom: 20px;
+              }
+
+              .host_contact {
+                padding: 15px 25px;
+                border: 1px solid #118488;
+                border-radius: 4px;
+                font-weight: bold;
+                color: #118488;
+                display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 75px;
+
+                &:hover {
+                  color: #fff;
+                  background: #118488;
+                }
+              }
             }
           }
         }
       }
-      .footer {
-        flex: 0 0 auto;
+      footer {
+        padding: 45px 25px;
+        box-shadow: 0 -1px 0 #e1e7ed;
+
+        .footer_container {
+          max-width: 900px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+
+          .footer_column {
+            display: flex;
+            flex-direction: column;
+
+            .footer_header {
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+
+            a:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+        }
       }
     }
   }
